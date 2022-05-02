@@ -1,6 +1,15 @@
 # MainPortfolioJS
 Website used as a portfolio written in HTML, CSS and JavaScript
 
+# Webserver revision
+
+During production configuration consider setting up the web server to support HTTP/2
+
+	curl -I <domain-name>
+	
+	
+[HTTP or HTTP/2](https://stackoverflow.com/questions/36940691/how-do-i-know-if-my-website-is-being-served-over-http-or-http-2)
+
 # Resources
 
 Favicon
