@@ -13,6 +13,9 @@ CDN
   - [CDN Libraries](https://cdnjs.com/libraries)
   - [SRI Hash](https://www.srihash.org/)
 
+jQuery Vulnerabilities
+  - [jQuery Vulnerabilities](https://snyk.io/vuln/npm:jquery)
+
 # Revision
 
 Revisions made against **v0.7-beta.3** 
