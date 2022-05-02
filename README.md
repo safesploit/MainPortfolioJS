@@ -17,11 +17,11 @@ During production configuration consider setting up the web server to support HT
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha512-jrDXSF9AvYxucIemk/2r7ntYBCMYWlNwl9D+DeL+3CxpbWC+JEwU3FTGFFLKm62s1ybn9hO5BImk6z0vTV3jdA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 ## JavaScript
-Placed in <head> tag:
+Placed in **head** tag:
 	
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-Placed at bottom of <body> tag:
+Placed at bottom of **body** tag:
 	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
