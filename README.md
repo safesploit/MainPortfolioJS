@@ -39,3 +39,12 @@ Isotope CDN does not contain SRI hash. The SRI hash was generaed manually and th
 
 	<script src="https://unpkg.com/isotope-layout@3.0.5/dist/isotope.pkgd.min.js" integrity="sha384-zEijsZ7v5U+8gaGEA+n4fHy97lqImaIXOAm9CB7vt+JHPXHkAhX9UzBxXW8BxiXF" crossorigin="anonymous"></script>
   
+## jQuery
+### CDN Location
+CDN Library moved from code.jquery.com to ajax.googleapis.com
+
+### Version
+
+Moved from jQuery 3.3.1 to jQuery 3.6.0.
+
+
