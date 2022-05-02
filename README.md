@@ -10,6 +10,28 @@ During production configuration consider setting up the web server to support HT
 	
 [HTTP or HTTP/2](https://stackoverflow.com/questions/36940691/how-do-i-know-if-my-website-is-being-served-over-http-or-http-2)
 
+# CDN Import Versions
+## CSS
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha512-jrDXSF9AvYxucIemk/2r7ntYBCMYWlNwl9D+DeL+3CxpbWC+JEwU3FTGFFLKm62s1ybn9hO5BImk6z0vTV3jdA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+## JavaScript
+Placed in <head> tag:
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+Placed at bottom of <body> tag:
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/isotope-layout@3.0.5/dist/isotope.pkgd.min.js" integrity="sha384-zEijsZ7v5U+8gaGEA+n4fHy97lqImaIXOAm9CB7vt+JHPXHkAhX9UzBxXW8BxiXF" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha512-GtU3C24wUoqw9549QI/9K3/JVLHIVqdwdDVkEkaX8umZS7TGEaBFUSBJe6tU6/VAc20z9BkYN3Yw2Jov7pUrqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	
+## GitHub
+  - [Superslides](https://github.com/nicinabox/superslides)
+  - [Owl Carousel v2.3.3](https://owlcarousel2.github.io/OwlCarousel2/docs/started-welcome.html)
+
 # Resources
 
 Favicon
