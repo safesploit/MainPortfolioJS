@@ -50,6 +50,9 @@ jQuery Vulnerabilities
 Free Stock Photos
   - [Pexels](https://www.pexels.com/)
 
+Icons
+  - [Icons8](https://icons8.com/)
+
 # Revision
 
 Revisions made against **v0.7-beta.3** 
