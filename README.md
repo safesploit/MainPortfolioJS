@@ -47,6 +47,9 @@ CDN
 jQuery Vulnerabilities
   - [jQuery Vulnerabilities](https://snyk.io/vuln/npm:jquery)
 
+Free Stock Photos
+  - [Pexels](https://www.pexels.com/)
+
 # Revision
 
 Revisions made against **v0.7-beta.3** 
