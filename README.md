@@ -31,7 +31,7 @@ Placed at bottom of **body** tag:
 ## GitHub
   - [Superslides](https://github.com/nicinabox/superslides)
   - [Owl Carousel v2.3.3](https://owlcarousel2.github.io/OwlCarousel2/docs/started-welcome.html)
-  - [Easy Pie Chart](https://rendro.github.io/easy-pie-chart/)
+  - [Easy Pie Chart](https://github.com/rendro/easy-pie-chart)
 
 # Resources
 
