@@ -32,6 +32,7 @@ Placed at bottom of **body** tag:
   - [Superslides](https://github.com/nicinabox/superslides)
   - [Owl Carousel v2.3.3](https://owlcarousel2.github.io/OwlCarousel2/docs/started-welcome.html)
   - [Easy Pie Chart](https://github.com/rendro/easy-pie-chart)
+  - [CountUp](https://github.com/inorganik/countUp.js/)
 
 # Resources
 
