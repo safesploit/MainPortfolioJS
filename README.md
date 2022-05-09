@@ -77,4 +77,16 @@ CDN Library moved from code.jquery.com to ajax.googleapis.com
 
 Moved from jQuery 3.3.1 to jQuery 3.6.0.
 
+## Bootstrap 4
+
+### Use for data-spy
+
+	data-spy="scroll" data-target="#navbarNav" data-offset="55"
+	
+Data-spy has been used to show the position on the page within the navigation menu.
+Data-spy was used instead of class = "navbar active" and then stylin "active" class tag
+
+
+
+
 
