@@ -1,9 +1,8 @@
-$(window).on("load", function() {
-
+$(window).on("load", function() 
+{
 	$(".loader .inner").fadeOut(500, function() {
 		$(".loader").fadeOut(750);
 	});
-
 
 	$(".items").isotope({
 		filter: '*',
@@ -13,11 +12,7 @@ $(window).on("load", function() {
 			queue: false
 		}
 	});
-	
-
 })
-
-
 
 
 $(document).ready(function() {
@@ -76,25 +71,13 @@ $(document).ready(function() {
 		itemsMobile:[480,1]
 	});
 
-	
-
 
 	var skillsTopOffset = $(".skillsSection").offset().top;
 	var timelineTopOffset = $('.timeline').offset().top;
-	var statsTopOffset = $(".statsSection").offset().top;
+	//var statsTopOffset = $(".statsSection").offset().top;
 	var countUpFinished = false;
-	$(window).scroll(function() {
-		// Fixed Navbar
-		// if(window.pageYOffset > windowH)
-		// {
-		// 	$('.navbar-flat').addClass('navbar-fixed-top');
-		// 	$('.firstSec').addClass('fixed');
-		// }
-		// else
-		// {
-		// 	$('.navbar-flat').removeClass('navbar-fixed-top');
-		// 	$('.firstSec').removeClass('fixed');
-		// }
+	$(window).scroll(function() 
+	{
 		// Timeline animation
 		if(window.pageYOffset > timelineTopOffset - $(window).height() + 200)
 		{
@@ -117,17 +100,17 @@ $(document).ready(function() {
 		    });
 		}
 
+		//Stats countUp //legacy
+		// if(!countUpFinished && window.pageYOffset > statsTopOffset - $(window).height() + 200) {
+		// 	$(".counter").each(function() {
+		// 		var element = $(this);
+		// 		var endVal = parseInt(element.text());
 
-		if(!countUpFinished && window.pageYOffset > statsTopOffset - $(window).height() + 200) {
-			$(".counter").each(function() {
-				var element = $(this);
-				var endVal = parseInt(element.text());
+		// 		element.countup(endVal);
+		// 	})
 
-				element.countup(endVal);
-			})
-
-			countUpFinished = true;
-		}
+		// 	countUpFinished = true;
+		// }
 	});
 
 	$("[data-fancybox]").fancybox();
@@ -180,20 +163,4 @@ $(document).ready(function() {
 			body.removeClass("fixedNav");
 		}
 	}
-
-	function daysExperience()
-	{
-		let date_1 = new Date('01/25/2009');
-		let date_2 = new Date();
-
-		const days = (date_1, date_2) =>{
-			let difference = date_1.getTime() - date_2.getTime();
-			let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
-			document.getElementById("daysExperience").innerHTML = TotalDays;
-			console.log(days(date_1, date_2));
-			return TotalDays;
-		}
-		
-	}
-
 });
