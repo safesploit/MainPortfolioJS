@@ -1,4 +1,8 @@
-user-agent: *
+User-agent: *
 Allow: /index.html
 Allow: /$
+
 Disallow: /
+Disallow: /pipermail/
+
+Sitemap: https://www.safesploit.com/sitemap.xml

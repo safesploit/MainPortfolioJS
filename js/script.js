@@ -4,6 +4,17 @@ $(window).on("load", function() {
 		$(".loader").fadeOut(750);
 	});
 
+
+	$(".items").isotope({
+		filter: '*',
+		animationOptions: {
+			duration: 1500,
+			easing: 'linear',
+			queue: false
+		}
+	});
+	
+
 })
 
 
@@ -11,6 +22,14 @@ $(window).on("load", function() {
 
 $(document).ready(function() {
 
+	// Scroll
+	$('.scrollto').click(function(e){
+		e.preventDefault();
+		var scrollElm = $(this).attr('href');
+		var scrollTo = $(scrollElm).offset().top;
+		$('html, body').animate({ scrollTop: scrollTo - 50 }, "slow");
+	});
+	
 	$('#slides').superslides({
 		animation: 'fade',
 		play: 5000,
@@ -18,43 +37,72 @@ $(document).ready(function() {
 	});
 
 	var typed = new Typed(".typed", {
-		strings: ["CyberSecurity.", "Malware Analyst.", "Systems Architect.", "Web Developer.", "Student."],
+		strings: ["CyberSecurity", "Malware Analyst", "Systems Architect", "Web Developer"],
 		typeSpeed: 70,
 		loop: true,
 		startDelay: 1000,
 		showCursor: false
 	});
 
-	$('.owl-carousel').owlCarousel({
-	    loop:true,
-	    items: 4,
-	    responsive:{
-	        0:{
-	            items:1
-	        },
-	        480:{
-	            items:2
-	        },
-	        768:{
-	            items:3
-	        },
-	        938:{
-	            items:4
-	        }
-	    }
-	});
 
+	// Stats //legacy breaks pagination autoPlay
+	// $('.owl-carousel').owlCarousel({
+	//     loop:true,
+	//     items: 4,
+	//     responsive:{
+	//         0:{
+	//             items:1
+	//         },
+	//         480:{
+	//             items:2
+	//         },
+	//         768:{
+	//             items:3
+	//         },
+	//         938:{
+	//             items:4
+	//         }
+	//     }
+	// });
+
+	// Skills-slide
+	var owl = $("#skills-slide");
+	owl.owlCarousel({
+		autoPlay:true,
+		items:4,
+		itemsDesktop:[1000,4],
+		itemsDesktopSmall:[900,3],
+		itemsTablet:[600,2],
+		itemsMobile:[480,1]
+	});
 
 	
 
 
 	var skillsTopOffset = $(".skillsSection").offset().top;
+	var timelineTopOffset = $('.timeline').offset().top;
 	var statsTopOffset = $(".statsSection").offset().top;
 	var countUpFinished = false;
 	$(window).scroll(function() {
-
-		if(window.pageYOffset > skillsTopOffset - $(window).height() + 200) {
-
+		// Fixed Navbar
+		// if(window.pageYOffset > windowH)
+		// {
+		// 	$('.navbar-flat').addClass('navbar-fixed-top');
+		// 	$('.firstSec').addClass('fixed');
+		// }
+		// else
+		// {
+		// 	$('.navbar-flat').removeClass('navbar-fixed-top');
+		// 	$('.firstSec').removeClass('fixed');
+		// }
+		// Timeline animation
+		if(window.pageYOffset > timelineTopOffset - $(window).height() + 200)
+		{
+			$('.timeline li').addClass('fadeInUp');
+		}
+		// Skills Chart animation
+		if(window.pageYOffset > skillsTopOffset - $(window).height() + 200) 
+		{
 			$('.chart').easyPieChart({
 		        easing: 'easeInOut',
 		        barColor: '#fff',
@@ -62,12 +110,11 @@ $(document).ready(function() {
 		        scaleColor: false,
 		        lineWidth: 4,
 		        size: 152,
-		        onStep: function(from, to, percent) {
+		        onStep: function(from, to, percent) 
+				{
 		        	$(this.el).find('.percent').text(Math.round(percent));
 		        }
 		    });
-
-
 		}
 
 
@@ -80,24 +127,10 @@ $(document).ready(function() {
 			})
 
 			countUpFinished = true;
-
 		}
-
-
 	});
-
 
 	$("[data-fancybox]").fancybox();
-
-
-	$(".items").isotope({
-		filter: '*',
-		animationOptions: {
-			duration: 1500,
-			easing: 'linear',
-			queue: false
-		}
-	});
 
 	$("#filters a").click(function() {
 
@@ -119,7 +152,6 @@ $(document).ready(function() {
 	});
 
 
-
 	$("#navigation li a").click(function(e) {
 		e.preventDefault();
 
@@ -130,15 +162,13 @@ $(document).ready(function() {
 	});
 
 
-
-
 	const nav = $("#navigation");
 	const navTop = nav.offset().top;
 
 	$(window).on("scroll", stickyNavigation);
 
-	function stickyNavigation() {
-
+	function stickyNavigation() 
+	{
 		var body = $("body");
 
 		if($(window).scrollTop() >= navTop) {
@@ -149,26 +179,21 @@ $(document).ready(function() {
 			body.css("padding-top", 0);
 			body.removeClass("fixedNav");
 		}
+	}
 
+	function daysExperience()
+	{
+		let date_1 = new Date('01/25/2009');
+		let date_2 = new Date();
 
-
-
+		const days = (date_1, date_2) =>{
+			let difference = date_1.getTime() - date_2.getTime();
+			let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
+			document.getElementById("daysExperience").innerHTML = TotalDays;
+			console.log(days(date_1, date_2));
+			return TotalDays;
+		}
+		
 	}
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
