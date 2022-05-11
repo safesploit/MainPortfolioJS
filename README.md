@@ -52,6 +52,9 @@ jQuery Vulnerabilities
 Free Stock Photos
   - [Pexels](https://www.pexels.com/)
 
+Image Resizer (1:1)
+  - [PhotoResizer](https://www.photoresizer.com/)
+
 Icons
   - [Icons8](https://icons8.com/)
 
