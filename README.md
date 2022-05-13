@@ -7,6 +7,8 @@ During production configuration consider setting up the web server to support HT
 
 	curl -I <domain-name>
 	
+[HTTP/2 Apache2 Tutorial](https://www.howtoforge.com/how-to-enable-http-2-in-apache/)
+	
 	
 [HTTP or HTTP/2](https://stackoverflow.com/questions/36940691/how-do-i-know-if-my-website-is-being-served-over-http-or-http-2)
 
