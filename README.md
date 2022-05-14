@@ -1,6 +1,23 @@
 # MainPortfolioJS
 Website used as a portfolio written in HTML, CSS and JavaScript
 
+# Table of Contents
+
+- [Webserver revision](#webserver-revision)
+- [CDN Import Versions](#cdn-import-versions)
+  * [CSS](#css)
+  * [JavaScript](#javascript)
+  * [GitHub](#github)
+- [Resources](#resources)
+- [Revision](#revision)
+  * [SRI Hashes](#sri-hashes)
+  * [Isotope Integrity](#isotope-integrity)
+  * [jQuery](#jquery)
+    + [CDN Location](#cdn-location)
+    + [Version](#version)
+  * [Bootstrap 4](#bootstrap-4)
+    + [Use for data-spy](#use-for-data-spy)
+
 # Webserver revision
 
 During production configuration consider setting up the web server to support HTTP/2
