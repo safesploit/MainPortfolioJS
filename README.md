@@ -23,11 +23,10 @@ Website used as a portfolio written in HTML, CSS and JavaScript
 During production configuration consider setting up the web server to support HTTP/2
 
 	curl -I <domain-name>
+		
 	
-[HTTP/2 Apache2 Tutorial](https://www.howtoforge.com/how-to-enable-http-2-in-apache/)
-	
-	
-[HTTP or HTTP/2](https://stackoverflow.com/questions/36940691/how-do-i-know-if-my-website-is-being-served-over-http-or-http-2)
+  - [HTTP or HTTP/2](https://stackoverflow.com/questions/36940691/how-do-i-know-if-my-website-is-being-served-over-http-or-http-2)
+  - [HTTP/2 Apache2 Tutorial](https://www.howtoforge.com/how-to-enable-http-2-in-apache/)
 
 # CDN Import Versions
 ## CSS
@@ -50,6 +49,7 @@ Placed at bottom of **body** tag:
 ## GitHub
   - [Superslides](https://github.com/nicinabox/superslides)
   - [Owl Carousel v2.3.3](https://owlcarousel2.github.io/OwlCarousel2/docs/started-welcome.html)
+  - [Owl Carousel v1.3.3](https://github.com/sergey-ovdienko/owlcarousel-v1/blob/master/owl-carousel/owl.carousel.css)
   - [Easy Pie Chart](https://github.com/rendro/easy-pie-chart)
   - [CountUp](https://github.com/inorganik/countUp.js/)
 
