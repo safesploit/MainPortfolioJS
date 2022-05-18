@@ -1,6 +1,24 @@
 # MainPortfolioJS
 Website used as a portfolio written in HTML, CSS and JavaScript
 
+# Features
+
+  - Page loading overlay
+  - Sticky navigation menu
+  - Fullscreen image slider
+  - Title section
+  - About section
+  - Animated interactive skills section
+	- Radical percentage charts
+	- 'Countup' when in view
+  - Timeline section which is interactive
+  - Projects section giving abstract of major projects worked on
+	- Embedded HTML5 video
+	- GitHub repositories 
+  - Stats section (legacy removed)
+  - Portfolio section of responsive images
+  - Contact section with professional social media
+
 # Table of Contents
 
 - [Webserver revision](#webserver-revision)
